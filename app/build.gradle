@@ -9,7 +9,7 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
-        applicationId "com.example.qapp"
+        applicationId "com.smartai.smartAI"
         minSdkVersion 26
         targetSdkVersion 30
         versionCode 1

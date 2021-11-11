@@ -1,4 +1,4 @@
-package com.smartai.main
+package com.smartai.standalone
 
 import com.smartai.model.Connector
 import com.smartai.model.Request

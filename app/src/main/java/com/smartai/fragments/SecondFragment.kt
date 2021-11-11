@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.example.qapp.R
+import com.smartai.smartAI.R
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
