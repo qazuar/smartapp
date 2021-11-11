@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">qapp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="textview_count_text">0</string>
+    <string name="random_heading">Here is a random number between 0 and %d.</string>
+    <string name="test_string_any_fragment">This is a test string</string>
+
+    <string name="button_toast">Toast</string>
+    <string name="button_count">Count</string>
+    <string name="button_random">Random</string>
+
+    <string name="message_toast">Hello this is a toast!</string>
+</resources>
