@@ -1,4 +1,4 @@
-package com.smartai.main
+package com.smartai.model
 
 import java.io.BufferedReader
 import java.io.DataInputStream
@@ -21,7 +21,6 @@ class Connector {
 
     fun get(request: Request) {
         try {
-            val response = mutableMapOf<String, String>()
             val start = System.currentTimeMillis()
 
             val connection = createConnection(request.server, GET)
@@ -59,8 +58,7 @@ class Connector {
     }
 
     private fun readInput(connection: HttpURLConnection): String {
-        val inputStream: DataInputStream =
-            DataInputStream(connection.errorStream ?: connection.inputStream)
+        val inputStream: DataInputStream = DataInputStream(connection.errorStream ?: connection.inputStream)
         val reader: BufferedReader = BufferedReader(InputStreamReader(inputStream, Charsets.UTF_8))
 
         val stringBuilder = StringBuilder()

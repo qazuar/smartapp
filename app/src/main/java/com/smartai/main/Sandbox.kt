@@ -1,5 +1,8 @@
 package com.smartai.main
 
+import com.smartai.model.Connector
+import com.smartai.model.Request
+
 class Sandbox {
 
     companion object {

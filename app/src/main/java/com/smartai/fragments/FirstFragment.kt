@@ -1,4 +1,4 @@
-package com.smartai.main
+package com.smartai.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
