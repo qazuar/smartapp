@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.google.android.material.snackbar.Snackbar
 import com.smartai.model.Connector
 import com.smartai.model.Request
 import com.smartai.smartAI.R
@@ -29,12 +31,21 @@ class SearchFragment : Fragment() {
                 val connector = Connector("kundecenter", "kundecenter")
                 val request = Request.newInstance()
 
-                request.server = "http://salgskerne-tst1.dsb.dk/sales/version"
+                request.server = "https://google.com/"
 
                 connector.get(request)
 
-                println(request.response)
+                request.response?.let {
+                    //ui.editSearchOrigin.setText("HAH")
+                } ?: run {
+                    println("Went bad")
+                }
+
+                request.exception?.let {
+                    println(it.message)
+                }
             }
+
         }
 
     }
